@@ -23,7 +23,6 @@ export class TemaComponent implements OnInit {
 
     if(environment.token ==''){
 
-      //alert('Sua sessão expirou, faça o login novamente')
       this.router.navigate(['/entrar'])
     }
     this.findAllTemas()

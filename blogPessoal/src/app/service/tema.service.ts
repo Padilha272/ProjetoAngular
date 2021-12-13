@@ -22,7 +22,7 @@ export class TemaService {
   }
 
   getbyIdTema(id: number): Observable<Tema>{
-    return this.http.get<Tema>('https://padiblog.herokuapp.com/tema${id}',this.token)
+    return this.http.get<Tema>(`https://padiblog.herokuapp.com/tema/${id}`,this.token)
   }
 
   postTema(tema: Tema):Observable<Tema>{
@@ -35,7 +35,7 @@ export class TemaService {
   }
 
   deleteTema(id: number){
-    return this.http.delete('https://padiblog.herokuapp.com/tema${id}',this.token)
+    return this.http.delete(`https://padiblog.herokuapp.com/tema/${id}`,this.token)
   }
 
 
