@@ -1,4 +1,4 @@
-<div class="container-fluid p1">
+<!-- <div class="container-fluid p1">
     <link href="http://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
     <style>
         @import url('http://fonts.cdnfonts.com/css/xilosa');
@@ -38,7 +38,7 @@
                          <img  src="./assets/img/aprochegue-logo-removebg-preview.png"
                         alt="pantera" width="100px" height="100px">
                     </div> -->
-                   
+<!--                    
                     <hr class=" mt-5 mb-5">
 
 
@@ -60,4 +60,45 @@
 
 
 
-</div>
+</div> --> 
+
+
+
+
+<div class="wrapper fadeInDown ">
+
+    <link href="http://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/xilosa');
+        </style>
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Padiblog </h2>
+      <!-- <h2 class="inactive underlineHover"> <a href=""></a>  Inscreva-se </h2> -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="assets/img/png-clipart-the-pink-panther-theme-inspector-clouseau-pink-panthers-cartoon-pink-panther-inspector-hand-fictional-character-thumbnail.png" alt="logo" width="50px" height="50px">
+      </div>
+  
+      <!-- Login Form -->
+      <form>
+        <input [(ngModel)]='userLogin.usuario' class="form-control" type="text" name="usuario"
+        id="usuario" placeholder="Usuário">
+        <div>
+           <input  [(ngModel)]='userLogin.senha' type="text" id="password" class="fadeIn third " name="login" placeholder="Senha"> 
+        </div>
+        
+        <input type="submit" class="fadeIn fourth laranja" (click)='entrar()' value="Entrar">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" routerLink='/cadastrar'>Cadastre-se</a>
+      </div>
+  
+    </div>
+
+    
+  </div>
+
