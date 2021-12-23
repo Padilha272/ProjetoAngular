@@ -1,45 +1,61 @@
-<div class="container-fluid">
+<div class="container-fluid p1">
+    <link href="http://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/xilosa');
+        </style>
+    <div class="row d-flex align-items-center">
 
-<div class="row d-flex align-items-center">
-
-<div class="col-md-6">
-
-    <div class="row d-flex justify-content-center">
         <div class="col-md-6">
-            <h1 class="text-center mb-3">Entrar</h1>
 
-            <div class="form-group">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="text-center mb-3 p1">Entrar <img src="assets/img/aprochegue-logo-removebg-preview.png" alt="logo" width="50px" height="50px"></h1>
 
-                <label for="usuario">Usuário</label>
-                <input [(ngModel)]='userLogin.usuario'  class="form-control" type="text" name="usuario" id="usuario" placeholder="seu usuario">
+                    <div class="form-group">
+
+                        <label for="usuario p1">Usuário</label>
+                        <input [(ngModel)]='userLogin.usuario' class="form-control" type="text" name="usuario"
+                            id="usuario" placeholder="seu usuario">
+                    </div>
+
+                    <div class="form-group ">
+
+                        <label for="senha ">Senha</label>
+                        <input [(ngModel)]='userLogin.senha' class="form-control" type="password" name="senha"
+                            id="senha" placeholder="sua senha">
+                    </div>
+                    <form action="submit">
+
+                        <div class="d-flex justify-content-center">
+
+
+                            <button type="submit" class="btn laranja p1 " (click)='entrar()'>Entrar</button>
+
+                        </div>
+                    </form>
+
+                    <!-- <div class="container d-flex justify-content-center mt-5">
+                         <img  src="./assets/img/aprochegue-logo-removebg-preview.png"
+                        alt="pantera" width="100px" height="100px">
+                    </div> -->
+                   
+                    <hr class=" mt-5 mb-5">
+
+
+                    <p class="text-center">
+                        Não tem uma conta ? <a routerLink='/cadastrar'>Cadastre-se</a>
+                    </p>
+
+                </div>
             </div>
 
-            <div class="form-group">
 
-                <label for="senha">Senha</label>
-                <input [(ngModel)]='userLogin.senha' class="form-control" type="password" name="senha" id="senha" placeholder="sua senha">
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary" (click)='entrar()'  >Entrar</button>
-            </div>
-
-            <hr class=" mt-5 mb-5">
-
-            <p class="text-center">
-                Não tem uma conta ? <a routerLink='/cadastrar'>Cadastre-se</a>
-            </p>
 
         </div>
+
+        <div class="col-md-6" id="img-bg"></div>
+
     </div>
-
-
-
-</div>
-
-<div class="col-md-6" id="img-bg"></div>
-
-</div>
 
 
 

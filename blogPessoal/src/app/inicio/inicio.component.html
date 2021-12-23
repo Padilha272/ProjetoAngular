@@ -1,10 +1,10 @@
 <div class="container-fluid">
 
-  <div class="row bg-secondary d-flex align-items-center">
+  <div class="row bg-light d-flex align-items-center">
     <div class="col-md-6">
 
       <div class="row d-flex justify-content-center">
-        <div class="col-md-6 text-white">
+        <div class="col-md-6 text-muted">
           <h1 class="fs-50">Seja bem vindo(a)!</h1>
           <h5 class='fs-18'>Expresse aqui suas opiniões e pensamentos</h5>
         </div>
@@ -56,6 +56,7 @@
             <p class="card-text mt-3">{{item.texto}}</p>
             <p class="card-text"><small class="text-muted">{{item.date | date: 'dd/MM/yyyy'}} às {{item.date | date:
                 'HH:mm'}} </small></p>
+              <img src="{{item.usuario.foto}}" width="100px" height="100px" alt="foto">
             <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
           </div>
         </div>

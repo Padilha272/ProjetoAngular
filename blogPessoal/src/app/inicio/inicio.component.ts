@@ -20,6 +20,7 @@ export class InicioComponent implements OnInit {
   tema: Tema = new Tema()
   listaTemas: Tema[]
   idTema: number
+  foto: string
 
   user: Usuario = new Usuario()
   idUser = environment.id
@@ -75,6 +76,7 @@ export class InicioComponent implements OnInit {
 
     this.user.id = this.idUser
     this.postagem.usuario = this.user
+    this.user.foto=this.foto
     
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
