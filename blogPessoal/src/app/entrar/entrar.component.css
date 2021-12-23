@@ -18,10 +18,17 @@
   }
 
  
+.p2{
+    font-family: 'Gotham', sans-serif;
+}
 
 
-
-
+.fundo{
+    background-image: url("https://envato-shoebox-0.imgix.net/ca4d/9c64-1ca1-4365-a636-7b5576fb2cbc/A18A7494b.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=e61c24051ce4df4126a5434284f0f7e5");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
    @import url('https://fonts.googleapis.com/css?family=Poppins');
@@ -30,6 +37,7 @@
 
 html {
   background-color: #56baed;
+  min-height: 100%;
 }
 
 body {
@@ -109,7 +117,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color:  #FFDEED;
+  background-color:  #f87307;
   border: none;
   color: rgb(12, 10, 10);
   padding: 15px 80px;
@@ -163,6 +171,29 @@ input[type=text] {
   border-radius: 5px 5px 5px 5px;
 }
 
+
+
+input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+
 input[type=text]:focus {
   background-color: #fff;
   border-bottom: 2px solid #e99d5f;
@@ -171,6 +202,16 @@ input[type=text]:focus {
 input[type=text]:placeholder {
   color: #cccccc;
 }
+
+
+input[type=password]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #e99d5f;
+  }
+  
+  input[type=password]:placeholder {
+    color: #cccccc;
+  }
 
 
 

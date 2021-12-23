@@ -65,40 +65,55 @@
 
 
 
-<div class="wrapper fadeInDown ">
-
-    <link href="http://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
-    <style>
-        @import url('http://fonts.cdnfonts.com/css/xilosa');
-        </style>
-    <div id="formContent">
-      <!-- Tabs Titles -->
-      <h2 class="active"> Padiblog </h2>
-      <!-- <h2 class="inactive underlineHover"> <a href=""></a>  Inscreva-se </h2> -->
-  
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="assets/img/png-clipart-the-pink-panther-theme-inspector-clouseau-pink-panthers-cartoon-pink-panther-inspector-hand-fictional-character-thumbnail.png" alt="logo" width="50px" height="50px">
-      </div>
-  
-      <!-- Login Form -->
-      <form>
-        <input [(ngModel)]='userLogin.usuario' class="form-control" type="text" name="usuario"
-        id="usuario" placeholder="Usuário">
-        <div>
-           <input  [(ngModel)]='userLogin.senha' type="text" id="password" class="fadeIn third " name="login" placeholder="Senha"> 
-        </div>
-        
-        <input type="submit" class="fadeIn fourth laranja" (click)='entrar()' value="Entrar">
-      </form>
-  
-      <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" routerLink='/cadastrar'>Cadastre-se</a>
-      </div>
-  
-    </div>
-
+<body class="fundo " >
     
-  </div>
+
+    <div class="wrapper fadeInDown p2">
+ 
+
+        <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+                    
+        <style>
+            @import url('http://fonts.cdnfonts.com/css/gotham');
+    </style>
+    
+    
+    
+        <link href="http://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
+        <style>
+            @import url('http://fonts.cdnfonts.com/css/xilosa');
+            </style>
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active p1 ">  </h2>
+          <!-- <h2 class="inactive underlineHover"> <a href=""></a>  Inscreva-se </h2> -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first mb-3">
+            <img src="assets/img/aprochegue-logo-removebg-preview.png" alt="logo" width="100px" height="100px">
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <input [(ngModel)]='userLogin.usuario' class="form-control mb-3" type="text" name="usuario"
+            id="usuario" placeholder="Usuário">
+    
+            <input  [(ngModel)]='userLogin.senha' type="password" id="password" class="fadeIn third mb-3" name="login" placeholder="Senha"> 
+          
+            
+            <input type="submit" class="fadeIn fourth laranja" (click)='entrar()' value="Entrar">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" routerLink='/cadastrar'>Cadastre-se</a>
+          </div>
+      
+        </div>
+    
+        
+      </div>
+
+
+</body>
 
