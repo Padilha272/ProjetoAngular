@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
 
     <div class="row d-flex align-items-center">
         <div class="col-md-6" id="img-bg"></div>
@@ -78,4 +78,76 @@
     
     </div>
     
+     -->
+
+
+
+
+     
+<body  >
     
+
+    <div class="wrapper fadeInDown p2">
+ 
+
+        <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+                    
+        <style>
+            @import url('http://fonts.cdnfonts.com/css/gotham');
+    </style>
+    
+    
+    
+        <link href="http://fonts.cdnfonts.com/css/xilosa" rel="stylesheet">
+        <style>
+            @import url('http://fonts.cdnfonts.com/css/xilosa');
+            </style>
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active p1 "> Cadastrar </h2>
+          <!-- <h2 class="inactive underlineHover"> <a href=""></a>  Inscreva-se </h2> -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first mb-3">
+            <img src="assets/img/aprochegue-logo-removebg-preview.png" alt="logo" width="100px" height="100px">
+          </div>
+      
+          <!-- Login Form -->
+          <form>
+            <input [(ngModel)] = 'usuario.nome' class="form-control mb-3" type="text" name="Seu nome"
+            id="usuario" placeholder="Seu nome">
+
+            <input [(ngModel)] ='usuario.usuario'  class="form-control" type="text" name="usuario" id="usuario" placeholder="Usuario">
+
+            <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="imagem" id="imagem" placeholder="Link da foto">
+    
+            <input (input)='confirmSenha($event)'  class="form-control" type="password" name="senha" id="senha" placeholder="senha">
+
+            <input [(ngModel)]='usuario.senha'   class="form-control" type="password" name="confirmarsenha" id="confirmarsenha" placeholder="confirmar senha">
+          
+            <select class="form-control"  name="tipo" id="tipo" placeholder="selecione o tipo do usuario" (change)='tipoUser($event)'>
+                <option >Selecione um tipo de usuario</option>
+                <option value="administrador">Administrador</option>
+                <option value="padrão">Padrão</option>
+            </select>
+
+            <div class="d-flex justify-content-center mt-5 ">
+                <button type="submit" class="btn h3 mr-3 text-light" (click)='cadastrar()' >Cadastrar</button>
+                <button type="submit" class="btn h4 text-light" routerLink='/entrar'>Cancelar</button>
+            </div>
+
+            <hr class=" mt-5 mb-5">
+
+
+           
+          </form>
+      
+          
+        </div>
+    
+        
+      </div>
+
+
+</body>
+
